@@ -18,7 +18,7 @@ export default function Home() {
   async function handleAccessCredential() {
     try {
       if (!code.trim()) {
-        return Alert.alert("Credencial", "Informe o código do ingreso!");
+        return Alert.alert("Credencial", "Informe o código do ingresso!");
       }
       setIsLoading(true);
       const { data } = await api.get(`/attendees/${code}/badge`);
